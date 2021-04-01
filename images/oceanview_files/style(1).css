@@ -1,0 +1,2302 @@
+/*
+	Theme Name: Turisto Child
+	Theme URI: http://www.thewebgen.com/
+	Description: Turisto child theme
+	Template: turisto
+*/
+
+@import url(https://fonts.googleapis.com/css?family=Viga);
+@import url(https://fonts.googleapis.com/css?family=Noto+Sans:400,400italic,700,700italic);
+
+@font-face {
+    font-family: 'rupee';
+    src: url('rupee_foradian-1-webfont.eot');
+    src: local('Ã¢ËœÂº'), url(data:font/truetype;charset=utf-8;base64,AAEAAAANAIAAAwBQRkZUTVen5G0AAADcAAAAHEdERUYAQAAEAAAA+AAAACBPUy8yRQixzQAAARgAAABgY21hcGmyCE0AAAF4AAABamdhc3D//wADAAAC5AAAAAhnbHlmmuFTtAAAAuwAABAoaGVhZPOmAG0AABMUAAAANmhoZWELSAQOAAATTAAAACRobXR4KSwAAAAAE3AAAABMbG9jYUCgSLQAABO8AAAAKG1heHAAFQP+AAAT5AAAACBuYW1lWObwcQAAFAQAAAIDcG9zdCuGzNQAABYIAAAAuAAAAAEAAAAAxtQumQAAAADIadrpAAAAAMhp2uoAAQAAAA4AAAAYAAAAAAACAAEAAQASAAEABAAAAAIAAAADAigBkAAFAAgFmgUzAAABGwWaBTMAAAPRAGYCEgAAAgAFAAAAAAAAAIAAAKdQAABKAAAAAAAAAABITCAgAEAAICBfBZr+ZgDNBrQBoiAAARFBAAAAAAAFnAAAACAAAQAAAAMAAAADAAAAHAABAAAAAABkAAMAAQAAABwABABIAAAADgAIAAIABgAgAFIAoCAKIC8gX///AAAAIABSAKAgACAvIF/////j/7L/ZeAG3+LfswABAAAAAAAAAAAAAAAAAAAAAAEGAAABAAAAAAAAAAECAAAAAgAAAAAAAAAAAAAAAAAAAAEAAAMAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAABQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAB//8AAgABAAAAAAO0BZwD/QAAATMVMzUhFTMVIxUjFSMVIxUjFSMVIxUjFSMVIxUjFSMVIxUjFSMVIxUjFSMVIxUjFSMVIxUzFTMVMxUzFTMVMxUzFTMVMxUzFTMVMxUzFTMVMxUzFTMVMxUjFSMVIxUjFSMVIxUjFSMVIxUjFSMVIxUjFSMVIxUjFSMVIxUjFSMVIxUjFSMVIxUjFSMVIxUjFSMVIxUjFSMVIxUjFSMVIxUjFSMVIxUjFSMVIxUjFSMVIxUjFSMVIxUjFSMVIxUjFSMVIxUjFSMVIxUjFSMVIxUjFSMVIxUjFSMVIxUjFSMVIxUjFSMVIxUjFSMVIxUjFSMVIxUjFSMVIxUjFSMVIxUjFTMVMxUzFTMVMxUzFTMVMxUzFTMVMxUzFTMVMxUzFTMVMxUzFTMVMxUzFTMVMxUzFTMVMxUzFTMVMxUzFTMVMxUzFTMVMxUzFTMVMxUzFTMVMxUzFTMVMxUzFTMVMxUzFTMVMxUzFTMVMxUzFTMVMxUzFTMVMxUzFTMVMxUzFTMVMxUzFTMVMxUzFTMVMxUzFTMVMxUzFTMVMxUzFTMVMxUzFTMVMxUzFTMVMxUzFTMVMxUzFTMVMxUzFTMVMxUzFTMVMxUzFTMVMxUzFTMVMxUzFTMVMxUzFTMVMxUzFTMVMxUzFTMVMxUzFTMVMxUzFTMVMxUzFTMVMxUzFTMVMxUzFTMVIxUjNSMVIzUjNSM1IzUjNSM1IzUjNSM1IzUjNSM1IzUjNSM1IzUjNSM1IzUjNSM1IzUjNSM1IzUjNSM1IzUjNSM1IzUjNSM1IzUjNSM1IzUjNSM1IzUjNSM1IzUjNSM1IzUjNSM1IzUjNSM1IzUjNSM1IzUjNSM1IzUjNSM1IzUjNSM1IzUjNSM1IzUjNSM1IzUjNSM1IzUjNSM1IzUjNSM1IzUjNSM1IzUjNSM1IzUjNSM1IzUjNSM1IzUjNSM1IzUjNSM1IzUjNSM1IzUjNSM1IzUjNSM1IzUjNSM1IzUjNSM1IzUjNSM1IzUjNSM1IzUjNSM1IzUjNSM1IzUjNSM1IzUjNSM1IzUzNTM1MzUzNTM1MzUzNTM1MzUzNTM1MzUzNTM1MzUzNTM1MzUzNTM1MzUzNTM1MzUzNTM1MzUzNTM1MzUzNTM1MzUzNTM1MzUzNTM1MzUzNTM1MzUzNSE1MzUzNTM1MzUzNTM1MzUzNTM1MzUzNTM1MzUzNTM1MzUzNTM1MzUzNTM1ITUjNSM1IzUjNSM1IzUjNSM1IzUjNSM1IzUjNSM1IzUjNSM1IzUjNSM1IzUjNSM1IzUjNSM1IzUjNSM1IzUjNTM1MzUzNTM1MzUzNTM1MzUzNTM1MzUzNTM1MzUzNTM1MzUzNTM1MzUzNSECTBAYATwEBAQEBAQEBAQEBAQEBAQEBAQEBAQQ2AQEBAQEBAQEBAQEBAQEBAT0BAQEBAQEBAQEBAQEBAQEBAQEBAQECJwEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAgEBAQECAQECAQIBAgECAgECAwICAgMCAwMEAwQFBAcHBAEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBIAcMAwEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEsCAcEBAMDAwICAgICAgECAQIBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAT9/AQEBAQEBAQEBAQEBAQEBAQEBAQECAGYBAQEBAQEBAQEBAQEBAgECAQIBAwICAwIEBAYFCjwBAQEBAQEBAQEBAQEBAQEBAQEBAQECAH0BZwEBAQIBAgIBAgECAQIBAgIBAgECAQIBAQEDAgECAQIBAgECAwICAwQEAQEBAgECAQICAQIBAgECAgECAQICAQEBAgQEBAMDAgIDAQICAQICAQEBAgEBAgEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBBAECAQEBAgEBAgEBAQECAQECAQEBAgEBAQIBAQIBAQEBAQIBAgEBAgEBAQIBAQECAQEBAgEBAQIBAQEBAQIBAQIBAQECAQEBAgEBAgEBAQEBAgEBAgEBAgEBAQEBAgEBAgEBAQECAQECAQEBAgEBAQECAQECAQECAQEBAQIBAQEBAgEBAQEBAQECAQEBAQIBAQECAQEBAgEBAQIBAQECAQECAQEBAgECAQEBAgEBAQIBAQIBAQEBAgEBAgEBAgEBAQECAQECAQEBAQIBAQECAQECAQEBAQIBAQIBAQEBAQIBAQECAQEBAgEBAgEBAQEBAQIBAQECAQEBAQIBAQECAQEBAQEBAgIeAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQECAQECAQICAgIDAwIHBQMCAQICAQIBAgECAQICAQIBAgEBAQEDAgIBAgEBAgEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAgECAQIBAgECAQIBAgECAQICAQEBAQAAAAAAQAAAAADtAWcA/0AAAEzFTM1IRUzFSMVIxUjFSMVIxUjFSMVIxUjFSMVIxUjFSMVIxUjFSMVIxUjFSMVIxUjFSMVMxUzFTMVMxUzFTMVMxUzFTMVMxUzFTMVMxUzFTMVMxUzFTMVIxUjFSMVIxUjFSMVIxUjFSMVIxUjFSMVIxUjFSMVIxUjFSMVIxUjFSMVIxUjFSMVIxUjFSMVIxUjFSMVIxUjFSMVIxUjFSMVIxUjFSMVIxUjFSMVIxUjFSMVIxUjFSMVIxUjFSMVIxUjFSMVIxUjFSMVIxUjFSMVIxUjFSMVIxUjFSMVIxUjFSMVIxUjFSMVIxUjFSMVIxUjFSMVIxUjFSMVIxUjFSMVIxUzFTMVMxUzFTMVMxUzFTMVMxUzFTMVMxUzFTMVMxUzFTMVMxUzFTMVMxUzFTMVMxUzFTMVMxUzFTMVMxUzFTMVMxUzFTMVMxUzFTMVMxUzFTMVMxUzFTMVMxUzFTMVMxUzFTMVMxUzFTMVMxUzFTMVMxUzFTMVMxUzFTMVMxUzFTMVMxUzFTMVMxUzFTMVMxUzFTMVMxUzFTMVMxUzFTMVMxUzFTMVMxUzFTMVMxUzFTMVMxUzFTMVMxUzFTMVMxUzFTMVMxUzFTMVMxUzFTMVMxUzFTMVMxUzFTMVMxUzFTMVMxUzFTMVMxUzFTMVMxUzFTMVMxUzFTMVMxUzFTMVMxUzFSMVIzUjFSM1IzUjNSM1IzUjNSM1IzUjNSM1IzUjNSM1IzUjNSM1IzUjNSM1IzUjNSM1IzUjNSM1IzUjNSM1IzUjNSM1IzUjNSM1IzUjNSM1IzUjNSM1IzUjNSM1IzUjNSM1IzUjNSM1IzUjNSM1IzUjNSM1IzUjNSM1IzUjNSM1IzUjNSM1IzUjNSM1IzUjNSM1IzUjNSM1IzUjNSM1IzUjNSM1IzUjNSM1IzUjNSM1IzUjNSM1IzUjNSM1IzUjNSM1IzUjNSM1IzUjNSM1IzUjNSM1IzUjNSM1IzUjNSM1IzUjNSM1IzUjNSM1IzUjNSM1IzUjNSM1IzUjNSM1IzUjNSM1IzUjNSM1MzUzNTM1MzUzNTM1MzUzNTM1MzUzNTM1MzUzNTM1MzUzNTM1MzUzNTM1MzUzNTM1MzUzNTM1MzUzNTM1MzUzNTM1MzUzNTM1MzUzNTM1MzUzNTM1MzUhNTM1MzUzNTM1MzUzNTM1MzUzNTM1MzUzNTM1MzUzNTM1MzUzNTM1MzUzNSE1IzUjNSM1IzUjNSM1IzUjNSM1IzUjNSM1IzUjNSM1IzUjNSM1IzUjNSM1IzUjNSM1IzUjNSM1IzUjNSM1IzUzNTM1MzUzNTM1MzUzNTM1MzUzNTM1MzUzNTM1MzUzNTM1MzUzNTM1MzUhAkwQGAE8BAQEBAQEBAQEBAQEBAQEBAQEBAQEENgEBAQEBAQEBAQEBAQEBAQE9AQEBAQEBAQEBAQEBAQEBAQEBAQEBAicBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQIBAQEBAgEBAgECAQIBAgIBAgMCAgIDAgMDBAMEBQQHBwQBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBASAHDAMBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBLAgHBAQDAwMCAgICAgIBAgECAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQE/fwEBAQEBAQEBAQEBAQEBAQEBAQEBAgBmAQEBAQEBAQEBAQEBAQIBAgECAQMCAgMCBAQGBQo8AQEBAQEBAQEBAQEBAQEBAQEBAQEBAgB9AWcBAQECAQICAQIBAgECAQICAQIBAgECAQEBAwIBAgECAQIBAgMCAgMEBAEBAQIBAgECAgECAQIBAgIBAgECAgEBAQIEBAQDAwICAwECAgECAgEBAQIBAQIBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQQBAgEBAQIBAQIBAQEBAgEBAgEBAQIBAQECAQECAQEBAQECAQIBAQIBAQECAQEBAgEBAQIBAQECAQEBAQECAQECAQEBAgEBAQIBAQIBAQEBAQIBAQIBAQIBAQEBAQIBAQIBAQEBAgEBAgEBAQIBAQEBAgEBAgEBAgEBAQECAQEBAQIBAQEBAQEBAgEBAQECAQEBAgEBAQIBAQECAQEBAgEBAgEBAQIBAgEBAQIBAQECAQECAQEBAQIBAQIBAQIBAQEBAgEBAgEBAQECAQEBAgEBAgEBAQECAQECAQEBAQECAQEBAgEBAQIBAQIBAQEBAQECAQEBAgEBAQECAQEBAgEBAQEBAQICHgEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAgEBAgECAgICAwMCBwUDAgECAgECAQIBAgECAgECAQIBAQEBAwICAQIBAQIBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQIBAgECAQIBAgECAQIBAgECAgEBAQEAAAAAAEAAAABAACTKPMBXw889QALCAAAAAAAyGna6gAAAADIadrqAAAAAAO0BZwAAAAIAAIAAAAAAAAAAQAABrT+XgDeBZwAAAAAA7QAAQAAAAAAAAAAAAAAAAAAABMD9gAAAAAAAAKqAAAB/AAAA/YAAAH8AAACzgAABZwAAALOAAAFnAAAAd4AAAFnAAAA7wAAAO8AAACzAAABHwAAAE8AAAEfAAABZwAAAAAECgQKBAoECggUCBQIFAgUCBQIFAgUCBQIFAgUCBQIFAgUCBQIFAABAAAAEwP+AAEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAACgB+AAEAAAAAABMABQAAAAMAAQQJAAAAaAAFAAMAAQQJAAEACgBtAAMAAQQJAAIADgB3AAMAAQQJAAMADgCFAAMAAQQJAAQAGgCTAAMAAQQJAAUAVgCtAAMAAQQJAAYACgEDAAMAAQQJABMACgENAAMAAQQJAMgAbgEXUnVwZWUAVAB5AHAAZQBmAGEAYwBlACAAqQAgACgAeQBvAHUAcgAgAGMAbwBtAHAAYQBuAHkAKQAuACAAMgAwADEAMAAuACAAQQBsAGwAIABSAGkAZwBoAHQAcwAgAFIAZQBzAGUAcgB2AGUAZABSAHUAcABlAGUAUgBlAGcAdQBsAGEAcgB3AGUAYgBmAG8AbgB0AFIAdQBwAGUAZQAgAFIAZQBnAHUAbABhAHIAVgBlAHIAcwBpAG8AbgAgADEALgAwADAAIABKAHUAbAB5ACAAMQA1ACwAIAAyADAAMQAwACwAIABpAG4AaQB0AGkAYQBsACAAcgBlAGwAZQBhAHMAZQBSAHUAcABlAGUAUgB1AHAAZQBlAFQAaABpAHMAIABmAG8AbgB0ACAAdwBhAHMAIABnAGUAbgBlAHIAYQB0AGUAZAAgAGIAeQAgAHQAaABlACAARgBvAG4AdAAgAFMAcQB1AGkAcgByAGUAbAAgAEcAZQBuAGUAcgBhAHQAbwByAC4AAAIAAAAAAAD/JwCWAAAAAAAAAAAAAAAAAAAAAAAAAAAAEwAAAAEAAgADADUBAgEDAQQBBQEGAQcBCAEJAQoBCwEMAQ0BDgEPB3VuaTAwQTAHdW5pMjAwMAd1bmkyMDAxB3VuaTIwMDIHdW5pMjAwMwd1bmkyMDA0B3VuaTIwMDUHdW5pMjAwNgd1bmkyMDA3B3VuaTIwMDgHdW5pMjAwOQd1bmkyMDBBB3VuaTIwMkYHdW5pMjA1Rg==)
+    format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+
+body{
+	background:#fff;
+}
+
+.bannerbtn {
+	background:#F6B02A !important;
+	color:#fff !important;
+	text-transform:uppercase !important;
+	width:202px !important;
+	height:46px !important;
+	text-align:center !important;
+	padding-top:15px !important;
+}
+
+.header {
+    background: transparent none repeat scroll 0 0;
+    color: #fff;
+    position: absolute;
+    width: 100%;
+    z-index: 1;
+    padding-top:0px;
+}
+
+.header-section-inner {
+    background-color: transparent;
+    border-radius: inherit;
+    box-shadow: none;
+    display: inline;
+    float: left;
+    padding-bottom:10px;
+    position: relative;
+    width: 100%;
+    z-index: 2;
+    display:block;
+    height:0px;
+}
+.innerheader {
+    background: rgba(0,0,0,0.7) !important;
+    height: 137px;
+}
+.breadcrumbs-wrap {
+    display: table-cell;
+    width: 40%;
+    padding-left: 30px;
+    position: relative;
+    vertical-align: middle;
+    top: -58px;
+    left: 50px;
+}
+.breadcrumbs ul li a {
+    border-bottom: medium none;
+    color: #d17039;
+}
+.logo {
+    float: left;
+    /*margin-top: -60px;*/
+}
+.logo img {
+    max-height: none !important;
+    max-width: none !important;
+}
+.main-nav-header {
+    float: right;
+    padding: 7px 0;
+}
+.main-nav a{
+	color:#fff !important;
+	text-shadow:none !important;
+	opacity: 1;
+}
+.main-nav a:hover {
+    color: #fff !important
+    opacity: 1;
+    text-decoration: none;
+}
+
+.home .main-nav a{
+	color:#341815 !important;
+	text-shadow:1px 2px 2px #fff !important;
+	opacity: 1;
+}
+.home .main-nav a:hover {
+    color: #F3955B !important
+    opacity: 1;
+    text-decoration: none;
+}
+
+
+.main-nav .current-menu-item::after {
+    background: inherit;
+}
+
+.main-nav .current-menu-item > a {
+    color: #F3955B !important;
+}
+
+.welcomeheading h1{
+	color:#d17039;
+	font-size:36px;
+	font-family:'Viga';
+	margin-bottom:10px;
+}
+.welcomeheading div{
+	color:#333;
+	font-size:18px;
+	font-family:'Noto Sans';
+}
+
+.aboutpageheading{
+	color:#d17039 !important;
+	font-size:36px !important;
+	font-family:'Viga' !important;
+	margin-bottom:30px !important;
+	margin-top:0px !important;
+	text-align:center !important;
+	text-transform:uppercase !important;
+	line-height:100%;
+}
+
+.exploreheading h1{
+	color:#f6b02a;
+	font-size:36px;
+	font-family:'Viga';
+	margin-bottom:10px;
+}
+.exploreheading div{
+	color:#333;
+	font-size:18px;
+	font-family:'Noto Sans';
+}
+
+.expresstext{
+	position:absolute;
+	padding:30% 15%;
+	text-align:center;
+}
+
+.expresstext h1{
+	color:#fff;
+	font-size:36px;
+	font-family:'Viga';
+	margin-bottom:10px;
+}
+.expresstext div{
+	color:#fff;
+	font-size:18px;
+	font-family:'Noto Sans';
+}
+
+.passionatecommit{
+	background:#fff !important;
+}
+
+.passionatecommit h2 {
+    color: #333;
+    font-family: "Viga" !important;
+    font-size: 24px !important;
+    margin-bottom: 10px;
+}
+.passionatecommit .wpb_text_column p{
+	font-family:'Noto Sans' !important;
+}
+
+
+
+
+.getready h1 {
+    color: #fff;
+    font-family: "Viga";
+    font-size: 70px;
+    margin-bottom: 20px;
+    margin-top: 0;
+}
+.getready div {
+    color: #fff;
+    font-family: "Noto Sans";
+    font-size: 18px;
+    font-weight: bold;
+    margin-bottom: 50px;
+    text-transform: uppercase;
+}
+
+.getreadyrow{
+	padding:145px 0;
+}
+
+
+.browsepackbtn:link,.browsepackbtn:hover,.browsepackbtn:visited,.browsepackbtn:active{
+	padding:7px 12px;
+	font-size:18px !important;
+	font-family:'Noto Sans';
+	background:#D17039;
+	color:#fff;
+	text-decoration:none;
+	border-radius:3px;
+	font-weight:normal;
+}
+
+
+.footer {
+    background: #222 none repeat scroll 0 0;
+    color: #bbb;
+    padding-top: 85px;
+}
+.footersocial {
+    padding: 50px 0 0;
+    text-align: center;
+}
+
+.footersocial li {
+    display: inline-block;
+    font-size: 24px;
+    padding: 0 13px;
+}
+.footersocial li::before
+{
+	content:'' !important;
+}
+
+.footersocial li a:link{
+	color:#F19554 !important;
+	border-bottom: medium none;
+}
+
+.footer .widget a:hover,.footer .widget a:visited,.footer .widget a:active {
+    border-bottom: medium none;
+    color: #F19554 !important;
+}
+
+
+#text-1, #text-3{
+	border-right:1px solid #393939;
+	padding:0 0 93px;
+	height:199px;
+}
+
+#text-2, #text-4{
+	border-right:1px solid #393939;
+	padding:0 0 93px;
+	height:199px;
+}
+
+.footer__bottom::before {
+    background: none;
+}
+.footer__arrow-top{
+	display:none;
+}
+
+.footer__bottom .container {
+    border-top: 1px solid #393939;
+    margin-top: 30px;
+    padding: 40px 0 30px;
+}
+
+.newsletter-widget input[type=email]{
+	float:left;
+	width:232px;
+	height:46px;
+	color:#999999;
+	border-radius:3px 0 0 3px;
+}
+
+.newsletter-widget input[type=submit]{
+	float:left;
+	width:120px;
+	height:46px;
+	background:#D17039;
+	font-size:15px;
+	border:none;
+	color:#fff;
+	text-transform:uppercase;
+	border-radius:0px 3px 3px 0px;
+}
+
+.footer .widget__title {
+    color: #fff;
+    font-size: 18px;
+    font-weight: bold !important;
+    margin-bottom: 6px;
+    opacity: 1;
+    text-align: center;
+    text-transform: capitalize;
+}
+
+.footer .textwidget a:link,.footer .textwidget a:active,.footer .textwidget a:visited{
+	color: #bbb;
+	border:none !important;
+}
+.footer .textwidget a:hover{
+	color: #bbb;
+	text-decoration:underline;
+	border:none !important;
+}
+.footer .widget .textwidget {
+    text-align: center;
+}
+.footer .col-md-4:first-child{
+	padding-right:0;
+}
+.home .margin-bottom{
+	margin-bottom:0px;
+}
+.home .margin-top{
+	margin-top:0px;
+}
+
+.box-image{
+	display:none;
+}
+
+.gs_testimonial_container {
+/*    padding: 5% 0 0 !important;*/
+}
+
+.gs_testimonial_single {
+    display: inline-block;
+    text-align: left !important;
+}
+
+.gs_testimonial_single p{
+	font-size:14px !important;
+}
+
+h3.box-title{
+	font-size:18px !important;
+}
+.box-designation{
+	color:#999 !important;
+	font-size:14px !important;
+}
+.box-designation span{
+	display:none;
+}
+.expressrow .vc_column-inner{
+	padding:0 !important;
+}
+
+
+.exploretext {
+    color: #fff;
+    margin-bottom: 0 !important;
+    margin-left: 0;
+    margin-right: 0;
+    margin-top: 100px;
+    position: absolute;
+    text-align: center;
+    width: 92%;
+}
+
+.exploretext h1{
+	font-family: "Viga" !important;
+    font-size: 36px !important;
+    text-transform:uppercase;
+    margin-top:0;
+	}
+
+.exploreprice{
+	color:#F6BA46;
+	font-size:18px;
+	font-weight:bold !important;
+}
+.exploreprice span{
+	color:#fff !important;
+}
+
+#menu-footer-menu a{font-size:0px;}
+
+#menu-item-268 a{
+	background:url(img/paypal.jpg) no-repeat;
+	width:39px;
+	height:26px;
+	display:block;
+	cursor:default;
+}
+
+#menu-item-269 a{
+	background:url(img/visa.jpg) no-repeat;
+	width:39px;
+	height:26px;
+	display:block;
+	cursor:default;
+}
+
+#menu-item-270 a{
+	background:#fff url(img/mastercard.jpg) no-repeat;
+	width:39px;
+	height:26px;
+	display:block;
+	cursor:default;
+}
+.explorerow{
+	background:#fff url(img/map-image.jpg) no-repeat top center !important;
+	padding:34px 0 25px 0 !important;
+}
+
+.welcomerow{ 
+	background:#F1F7F7 !important;
+	padding:36px 0 16px 0 !important;
+}
+.expressrow{
+	background:#F1F7F7 !important;
+}
+
+.expressrow .wpb_single_image{ margin:0 !important; }
+
+.passioncommitrow{
+	padding:35px 0 20px 0 !important;
+}
+
+
+.gs_testimonial_container .cycle-nav #prev {
+    display: none;
+}
+.gs_testimonial_container .cycle-nav #next {
+    display: none;
+}
+
+.shapeimg img{
+	height:500px !important;
+}
+
+.testi{
+	width:500px !important;
+}
+
+
+.gs_testimonial_container{
+	width:506px !important;
+	top:0 !important;
+	bottom:0 !important;
+}
+
+.home_search{
+	margin-top:-340px;
+}    
+
+#logoLink img {
+    max-height: 95px;
+    max-width: 300px;
+    position: relative;
+    top: -20px;
+}
+
+
+@media only screen and (min-width:768px) and (max-width: 991px){
+
+
+
+
+    #text-1, #text-3{
+      border-right:0!important;
+    }
+    
+    #text-2, #text-4{
+      border-right:0!important; 
+    }
+    
+    .gs_testimonial_container{
+	   width:285px!important;
+    }
+    .home .gs_testimonial_single .box-content p{
+        font-size:13px!important;
+    }
+
+   .footernav li {
+	    width: 100% !important;
+	    line-height: 200%!important;
+	}
+}
+
+
+
+@media only screen and (min-width:991px) and (max-width: 1280px){
+ 
+    .gs_testimonial_container{
+	   width:380px!important;
+    }
+    
+}
+
+
+@media only screen and (min-width:768px) and (max-width: 1280px){
+
+.home_search{
+	margin-top: -250px !important; 
+}
+
+.slidertitle{ 
+	top:-65% !important;
+}
+
+	.exploretext {
+	    margin-top: 50px;
+	    font-size: 22px !important;
+	}
+	.exploretext h1{
+	    font-size: 22px !important;
+	}
+	
+	.atbtn {
+	    white-space: pre-line;
+	    width: 130px;
+	    line-height:159%;
+	}
+	.wpb_flexslider .atbtn {
+	    width: 170px;
+	}
+	.newsletter-widget{
+		margin-left: 25%;
+    	text-align: center;
+	}
+	.footernav li {
+	    float: left;
+	    list-style-type: none;
+	    padding: 0 30px 20px 0;
+	}  
+    
+    .dropdown-menu.open{
+        top:-24px!important;
+    }
+    /*.atbtn{
+        width:110px!important;
+    }*/
+    
+    .blog__item__content .atbtn{
+    width:165px!important;
+    }
+    
+    .page-id-9 .atbtn--input-wrap input{
+        padding:1em 2em 1em 55px!important;
+    }
+      
+
+}
+
+
+
+@media only screen and (min-width:360px) and (max-width: 767px){
+
+
+.header__info__item--shoping-cart {
+    position: relative;
+    top: -18px;
+}
+
+.breadcrumbs-wrap {
+    display: table-cell;
+    left: 40px  !important; 
+    padding-left: 30px;
+    position: relative;
+    top: -143px  !important;
+    vertical-align: middle;
+    width: 70%  !important;
+    font-size:11px !important;
+}
+.slidertitle{ 
+	top:10% !important;
+}
+
+.header{
+	height:70px !important;
+}
+
+.header__info__items-right {
+    float: right;
+    margin-right: 160px  !important;
+    text-shadow: 1px 1px 2px #000000;
+}
+
+
+
+
+.aboutlistcontent {    
+    height: auto !important;    
+}
+
+.header-section-inner {
+	z-index:0;
+}
+
+.home_search{
+	margin-top:0px;
+}    
+#logoLink img {
+    margin-left: 0;
+    margin-top: -140px;
+    width: 55px !important;
+}
+	.testi{
+		width:320px !important;
+		padding:0 20px;
+	}
+	.getready h1 {
+	    line-height: 100%;
+	 }
+	 .welcomeheading h1, .expresstext h1, .exploreheading h1{line-height:100%;}
+	 .footersocial li {
+   		padding: 0 10px;
+	}
+	.newsletter-widget input[type="email"] {
+	    border-radius: 3px;
+	    color: #999999;
+	    float: left;
+	    height: 46px;
+	    width: 282px;
+	}
+	.newsletter-widget input[type="email"] {
+	    border-radius: 3px;	 
+	}
+	.header-section__title {
+	    margin: 20px 0 0 !important;
+	}
+	
+	.logo {
+    float: left;
+    margin-top: 10px !important;
+	}
+	.home .form-block {
+	    background: transparent none repeat scroll 0 0;
+	    margin-top: 100px;
+	    z-index:0;
+	}
+	.single-product .inner-page-content-area {
+    margin-top: 60px !important;
+}
+.page-id-1212  .inner-page-content-area-about {
+    margin-top: 244px !important;
+}
+
+
+.testimonialsection{
+	width:100% !important;
+}
+.gs_testimonial_container {
+    padding: 0 0 0 !important;
+}
+
+.passioncommitrow {
+    padding: 0 0 20px !important;
+}
+.page-id-1212 .margin-bottom {
+    margin-bottom: 0 !important;
+    margin-top: 70px  !important;
+}
+
+
+
+.slicknav_menu .slicknav_btn {
+    background: #f19554 !important;
+    top:0px !important;
+}
+.page-id-1460 .inner-page-content-area {
+    margin-bottom: 0 !important;
+    margin-top: 150px!important;
+}
+
+.blog .inner-page-content-area, .single-post .inner-page-content-area, .archive .inner-page-content-area {
+    margin-top: 180px !important;
+}
+.inner-page-content-area {
+    margin-top: 180px !important;
+}
+.page-id-26 .inner-page-content-area {
+    margin-top: 130px !important;
+}
+.woocommerce-account .inner-page-content-area {
+    margin-top: 150px !important;
+}
+.slidertitle {
+    bottom: 0;
+    font-size: 22px !important;
+    height: 50px !important;
+    left: 0;
+    margin: auto !important;
+    position: absolute;
+    right: 0;
+    text-align: center;
+    top: -73% !important;
+    width: 100%;
+    z-index: 1;
+}
+.tours-tabs{
+	margin-top:60px !important;
+}
+.single-product .tp-bullets {
+    top: 100% !important;
+    display:none !important;
+}
+.slidertitle h1{
+	font-size:20px !important;
+}
+.page-id-1444 .inner-page-content-area, .page-id-26 .inner-page-content-area, .page-id-1460 .inner-page-content-area {
+    margin-top: 50px !important;
+}
+.page-id-1212 .inner-page-content-area {
+    margin-top: 0px !important;
+}
+.shapeimg img {
+    height: 500px !important;
+    opacity: 0;
+}
+.expressyourself{
+	background:#F19554 !important;
+}
+
+.footernav li:before{
+	content:'' !important;
+}
+.footernav li{
+	width:100% !important;
+	line-height:200%!important;
+}
+
+
+.testi{
+	width:360px !important;
+}
+
+
+.gs_testimonial_container{
+	width:100% !important;
+}
+
+
+/* Deepak 14/10/2016 */
+
+    .testimonialsection.wpb_column.vc_column_container.vc_col-sm-6{
+        padding:0 10px!important;  
+    }
+    
+    .vc_row.wpb_row.vc_row-fluid .form-block{
+        margin-top: 0!important;
+    }
+    
+    .vc_row.wpb_row.vc_row-fluid .wpb_column.vc_column_container.vc_col-sm-12 .vc_column-inner .home_search .wpb_wrapper > div{
+        margin-top:55px!important;
+    }
+    
+    .header__info .header__info__items-left .header__info__item:nth-child(4){
+        margin:0 0 0 20px!important;
+    }
+    
+    .header__info .header__info__items-left .header__info__item{
+        margin:0 0 0 20px!important;
+    }
+    
+    .header__info__items-right{
+         margin: 0px 85px 0 0!important;
+    }
+    
+    .header__info__item.header__info__item--delimiter.header__info__item--shoping-cart{
+        top: -40px!important;
+    }
+    
+    .slicknav_menu {
+        display: block;
+        margin-top: -30px;
+    }
+    
+    .home .gs_testimonial_single .box-content p{
+	   font-size:11px !important; 
+    }
+    
+    #text-1, #text-3{
+      border-right:0!important;
+    }
+    
+    #text-2, #text-4{
+      border-right:0!important; 
+    }
+    
+    .home .gs_testimonial_single .box-content p{
+	   font-size:12px !important;
+    }
+    
+    #tabatab2-collapse .packagelistcontentbg .package_list_block{
+        width:66%!important;
+    }
+    
+    .page-id-9 .inner-page-content-area {
+        margin-top: 40px!important;
+    }
+    
+    .page-id-1460 .inner-page-content-area{
+        margin-top:40px!important;
+    }
+/* Deepak 14/10/2016 */
+
+}
+
+
+@media only screen and (min-width:440px) and (max-width: 767px){
+
+.single-product .tp-bullets {
+    top: 100% !important;
+    display:none !important;
+}
+
+	.header__info__items-right {
+	    float: right;
+	    margin-right: 0px !important;
+	    margin-top: 40px !important;
+	    text-shadow: 1px 1px 2px #000000;
+	}
+.slidertitle {
+    bottom: 0;
+    font-size: 22px !important;
+    height: 50px !important;
+    left: 0;
+    margin: auto !important;
+    position: absolute;
+    right: 0;
+    text-align: center;
+    top: -73% !important;
+    width: 100%;
+    z-index: 1;
+}
+.tours-tabs{
+	margin-top:60px !important;
+}
+.slidertitle h1{
+	font-size:20px !important;
+}
+
+.page-id-1444 .inner-page-content-area, .page-id-26 .inner-page-content-area, .page-id-1460 .inner-page-content-area {
+    margin-top: 50px !important;
+}
+.page-id-1212 .inner-page-content-area {
+    margin-top: 0px !important;
+}
+
+.footernav li:before{
+	content:'' !important;
+}
+.footernav li{
+	width:100% !important;
+	line-height:200%!important;
+}
+
+.testi{
+	width:360px !important;
+}
+
+
+.gs_testimonial_container{
+	width:100% !important;
+}
+
+}
+
+
+@media only screen and (min-width:320px) and (max-width: 359px){
+
+
+.testi{
+	width:290px !important;
+}
+
+
+.gs_testimonial_container{
+	width:100% !important;
+}
+
+.footernav li:before{
+	content:'' !important;
+}
+.footernav li{
+	width:100% !important;
+	line-height:200%!important;
+}
+
+
+.expressyourself{
+	background:#F19554 !important;
+}
+.shapeimg img {
+    height: 500px !important;
+    opacity: 0;
+}
+
+.page-id-1444 .inner-page-content-area, .page-id-26 .inner-page-content-area, .page-id-1460 .inner-page-content-area {
+    margin-top: 50px !important;
+}
+.page-id-1212 .inner-page-content-area {
+    margin-top: 0px !important;
+}
+.slidertitle h1{
+	font-size:20px !important;
+}
+
+.single-product .tp-bullets {
+    top: 100% !important;    
+    display:none !important;
+}
+
+
+
+.tours-tabs{
+	margin-top:60px !important;
+}
+
+.slidertitle {
+    bottom: 0;
+    font-size: 22px !important;
+    height: 50px !important;
+    left: 0;
+    margin: auto !important;
+    position: absolute;
+    right: 0;
+    text-align: center;
+    top: -73% !important;
+    width: 100%;
+    z-index: 1;
+}
+
+.woocommerce-account .inner-page-content-area {
+    margin-top: 150px !important;
+}
+
+.inner-page-content-area {
+    margin-top: 180px !important;
+}
+
+.page-id-26 .inner-page-content-area {
+    margin-top: 130px !important;
+}
+
+.blog .inner-page-content-area, .single-post .inner-page-content-area, .archive .inner-page-content-area {
+    margin-top: 180px !important;
+}
+
+.page-id-1460 .inner-page-content-area {
+    margin-bottom: 0 !important;
+    margin-top: 150px!important;
+}
+.slicknav_menu .slicknav_btn {
+    background: #f19554 !important;
+    top:0px !important;
+}
+
+
+.page-id-1212 .margin-bottom {
+    margin-bottom: 0 !important;
+    margin-top: 70px !important;
+}
+.header__info__item--shoping-cart i {
+    margin-right: 5px;
+    position: relative;
+    top: 15px;
+}
+.breadcrumbs {
+    margin-top: 40px;
+    text-align: center;
+}
+
+.header__info__item--shoping-cart {
+    position: relative;
+    top: -18px;
+}
+
+.breadcrumbs-wrap {
+    display: table-cell;
+    left: 40px  !important; 
+    padding-left: 30px;
+    position: relative;
+    top: -143px  !important;
+    vertical-align: middle;
+    width: 70%  !important;
+    font-size:11px !important;
+}
+
+
+
+.header{
+	height:70px !important;
+}
+
+.header__info__items-right {
+    float: right;
+    margin-right: 160px  !important;
+    text-shadow: 1px 1px 2px #000000;
+}
+
+
+.passioncommitrow {
+    padding: 0 0 20px !important;
+}
+.gs_testimonial_container {
+    padding: 0 0 0 !important;
+}
+
+.testimonialsection{
+	width:100% !important;
+}
+
+
+.single-product .inner-page-content-area {
+    margin-top: 60px !important;
+}
+
+.page-id-1212  .inner-page-content-area-about {
+    margin-top: 244px !important;
+}
+
+.aboutlistcontent {    
+    height: auto !important;    
+}
+
+.header-section-inner {
+	z-index:0;
+}
+
+
+.home .form-block {
+    background: transparent none repeat scroll 0 0;
+    margin-top: 100px;
+    z-index:0;
+}
+#logoLink img {
+    margin-left: 0;
+    margin-top: -140px;
+    width: 55px !important;
+}
+	.logo {
+    float: left;
+    margin-top: 10px !important;
+	}
+
+	.header-section__title {
+	    margin: 20px 0 0 !important;
+	}
+.home_search{
+	margin-top:0px;
+}   
+
+	.testi{
+		width:280px !important;
+		padding:0 10px;
+	}
+	.newsletter-widget input[type="email"] {
+	    border-radius: 3px;	 
+	}
+	.footersocial li {   
+    	padding: 0 10px;
+	}
+	.getready h1 {
+	    line-height: 100%;
+	 }
+	 .welcomeheading h1, .expresstext h1, .exploreheading h1{line-height:100%;}
+	 .newsletter-widget input[type="email"] {
+	    border-radius: 3px;
+	    color: #999999;
+	    float: left;
+	    height: 46px;
+	    width: 282px;
+	}
+	.header__info__items-right {
+    clear: both;
+    float: right;
+    margin-right: 0;
+    margin-top: -20px;
+    text-shadow: 1px 1px 2px #000000;
+}
+
+/* Deepak 14/10/16 */
+    .testimonialsection.wpb_column.vc_column_container.vc_col-sm-6{
+        padding:0 10px!important;
+    }
+    
+    .vc_row.wpb_row.vc_row-fluid .form-block{
+        margin-top: 0!important;
+    }
+    
+    .vc_row.wpb_row.vc_row-fluid .wpb_column.vc_column_container.vc_col-sm-12 .vc_column-inner .home_search .wpb_wrapper > div{
+        margin-top:55px!important;
+    }
+    
+    .header__info .header__info__items-left .header__info__item{ 
+        margin: 0 0 0 20px!important;
+    }
+    
+    .header__info .header__info__items-left .header__info__item:nth-child(3){
+        margin:0 0 0 20px!important;
+        position: relative;
+        top:-8px;   
+    }
+    
+    .header__info .header__info__items-left .header__info__item:nth-child(4){
+        margin:0 0 0 20px!important;
+        position: relative;
+        top:-8px;
+    }
+    
+    .header__info__items-right{
+         margin: 0px 35px 0 0!important;
+    }
+    
+    .header__info__item.header__info__item--delimiter.header__info__item--shoping-cart{
+        top: -63px!important;
+    }
+    
+    .slicknav_menu {
+        display: block;
+        margin-top: -30px;
+    }
+    
+    .home .gs_testimonial_single .box-content p{
+	   font-size:11px !important; 
+    }
+    
+    #text-1, #text-3{
+      border-right:0!important;
+    }
+    #text-2, #text-4{
+      border-right:0!important; 
+    }
+    
+    #tabatab2-collapse .packagelistcontentbg .package_list_block{
+        width:66%!important;
+    }
+    
+    .page-id-9 .inner-page-content-area {
+        margin-top: 40px!important;
+    }
+    
+    .page-id-1460 .inner-page-content-area{
+        margin-top:40px!important;
+    }
+    
+/* Deepak 14/10/16 */
+}
+
+
+
+.faq__accordion__heading i {
+    background: #f19554 none repeat scroll 0 0;
+    border-radius: 100%;
+    display: inline-block;
+    height: 50px;
+    left: 0;
+    position: absolute;
+    top: 50%;
+    transform: translate(0px, -50%);
+    width: 50px;
+}
+
+.title--decoration-bottom-center::after {
+    background: #f19554 none repeat scroll 0 0;
+}
+
+.faq__accordion__title:hover {
+    border-bottom: medium none;
+    color: #f19554;
+}
+.header-section__content--breadcrumbs .header-section__title:first-child {
+    color: #f6b02a;
+    font-size: 1.467em;
+    margin: 0 auto;
+    width:360px !important;
+    display:none;
+}
+
+.header-section__title {
+    color: #fff; 
+    text-shadow: 1px 1px 1px #000, 2px 2px 4px #666;
+}
+
+.header-section__content--breadcrumbs {
+    display: table;
+    padding: 0;
+    width: 100%;
+}
+.header-section__content {
+    height: 35px;
+}
+.article-info > li i {
+    color: #f19554;
+    margin-right: 5px;
+}
+.blog__item__sticky__bg {
+    color: #f19554;
+    font-size: 3.333em;
+}
+.sidebar .widget__title::after {
+    background: #f19554;
+}
+
+.faq__accordion__item--open .faq__accordion__heading i {
+    background: #222222 none repeat scroll 0 0;
+}
+.widget ul li::before {
+    color: #f19554;   
+    }
+    .sidebar .recentcomments a {
+    border-bottom: 1px dashed transparent;
+    color: #f19554;
+}
+
+.sidebar .recentcomments a:hover {
+    border-bottom: 1px dashed #f19554;
+}
+.widget ul a:hover {
+    color: #f19554;
+}
+.atbtn--transparent {
+    background: transparent none repeat scroll 0 0;
+    border: 2px solid #f19554;
+    color: #333 !important;
+    line-height: 2.733em;
+}
+
+.atbtn--transparent:hover {
+    background: #f19554 none repeat scroll 0 0;
+    border-bottom: 2px solid #f19554;
+}
+blockquote {
+    border-left: 5px solid #f19554;
+    font-size: 1.2em;
+    line-height: 1.667em;
+    margin: 20px 0 20px 20px;
+    padding-left: 20px;
+}
+.post-tags span i {
+    color: #f19554;
+    margin-right: 10px;
+}
+.atbtn {
+    background: #f19554;
+    padding:0 20px;
+    
+}
+.atbtn:hover {
+    background: #f19554;
+   
+}
+
+.comments__item__reply-link a::before {
+    color: #f19554;
+    }
+
+
+.form-block--light-style.form-block--with-title .title {
+	background: #f19554 none repeat scroll 0 0;
+}
+.form-block--light-style button[type="submit"], .form-block--light-style input[type="submit"] {
+    background: #f19554 none repeat scroll 0 0;
+}
+
+.form-block__item .ui-slider-range {
+    background: #f19554 none repeat scroll 0 0;
+}
+.form-block__item .ui-slider-handle {
+    background: #f19554 none repeat scroll 0 0 !important;
+}
+
+
+
+.header__info__items-left {
+    float: right;
+    text-shadow:1px 1px 2px #000000;
+}
+.header__info__items-right {
+    
+    float: right;
+    margin-right: 30px;    
+    text-shadow: 1px 1px 2px #000000;
+}
+
+.header__info::before {
+    height: 0px;
+}
+.header__content {
+    line-height: 15px;
+    min-height: 5px;
+    position: relative;
+}
+.contact-info__item__icon i {
+    background: #f19554 none repeat scroll 0 0;
+}
+
+
+.atbtn--input-wrap input:hover {
+    background: #f19554 none repeat scroll 0 0;
+}
+
+.atbtn--input-wrap input {
+    background: #f19554;
+}
+.contact-info__item a{
+	border-bottom:none !important;
+	color: #f19554;
+}
+.contact-info__item a span:hover{
+	text-decoration:underline;
+}
+
+.main-nav a {
+    text-shadow: 1px 1px 2px #000000;
+}
+
+.form-block__field-width-icon i {
+    color: #f19554;
+}
+
+.form-block--light-style button[type="submit"]:hover, .form-block--light-style input[type="submit"]:hover {
+    background: #f19554 none repeat scroll 0 0;
+}
+
+
+
+
+
+
+
+.woocommerce-Price-currencySymbol{
+	font-family: 'rupee';	
+}
+
+
+.atgrid__item__price__button {
+    background: #f19554 none repeat scroll 0 0;
+}
+
+.atgrid__item__price::after {
+    background: #f19554 none repeat scroll 0 0;
+}
+
+.form-block {
+    background: #222222;
+}
+
+.item-attributes__item i {
+    color: #f19554;
+    margin-right: 10px;
+    vertical-align: middle;
+}
+
+.bootstrap-select .bs-searchbox + ul.dropdown-menu.inner > .active > a {
+    background: #f19554;
+    color: #fff;
+}
+
+.tours-tabs .nav-tabs li.active a {
+    background: #f19554 none;
+}
+.tours-tabs .nav-tabs {
+    border-bottom: 3px solid #f19554;
+    margin: 0;
+}
+.list-block > li {
+    background: #77B8FF;
+}
+.list-block > li:hover {
+    background: #f19554;
+}
+.price-decoration__value {
+    background: #f19554 none 
+}
+.price-decoration__label {
+    background: #222 none repeat scroll 0 0;
+    border-radius:0;
+}
+
+.form-block--style3 .form-block__button {
+    background: #f19554 none repeat scroll 0 0 !important;
+}
+.list-block > li a {
+    background: #f19554 none repeat scroll 0 0 !important;
+}
+.timeline__item__icon {
+    background: #f19554;
+}
+.timeline__item__icon-wrap::before {
+    border-left: 4px dotted #f19554;
+}
+.woocommerce #respond input#submit {
+    background: #f19554; 
+}
+.woocommerce #respond input#submit:hover {
+    background: #D56411; 
+}
+.form-block__item .ui-slider-handle {
+    background: #f19554 none repeat scroll 0 0 !important;
+}
+
+.form-validation-item + .tooltip > .tooltip-inner {
+    background: #eb7591 none repeat scroll 0 0 !important;
+}
+.form-validation-item + .tooltip > .tooltip-inner {
+    background: #fe6b6b none repeat scroll 0 0 !important;
+}
+.form-validation-item + .tooltip.top .tooltip-arrow {
+    border-top-color: #fe6b6b !important;
+}
+
+.home .form-block {
+    background: transparent;
+}
+
+.woocommerce .woocommerce-info::before, .woocommerce-cart .woocommerce-info::before, .woocommerce-page .woocommerce-info::before {
+    background: #f19554;
+}
+
+.bootstrap-select ul.dropdown-menu li a:hover {
+    background: rgba(0, 0, 0, 0) none repeat scroll 0 0;
+    color: #f19554;
+}
+
+.woocommerce div.product-box p.price {
+    background: #f19554; 
+
+}
+
+.woocommerce div.product-box form.cart .single_add_to_cart_button {
+    background: #D56411 !important;
+    
+}
+
+.product_meta a:link,.product_meta a:active,.product_meta a:visited,.product_meta a:hover{
+	color:#f19554;
+}
+
+.woocommerce-page .woocommerce input.button, .woocommerce-page .woocommerce a.button, .woocommerce-page .woocommerce .button, .woocommerce-page input.button, .woocommerce-page a.button, .woocommerce-page a.button:hover,.woocommerce-page a.button:hover{
+	background:#f19554 !important;
+}
+
+.woocommerce-page .woocommerce input.button:hover, .woocommerce-page .woocommerce a.button:hover, .woocommerce-page .woocommerce .button:hover, .woocommerce-page input.button:hover, .woocommerce-page a.button:hover, .woocommerce-page .button:hover, .woocommerce .woocommerce input.button:hover, .woocommerce .woocommerce a.button:hover, .woocommerce .woocommerce .button:hover, .woocommerce input.button:hover, .woocommerce a.button:hover, .woocommerce .button:hover
+{ 
+	background:#f19554 !important;
+}
+
+.woocommerce-review-link{
+	color:#f19554 !important;
+}
+
+.abouttextbg{
+	background:rgba(255,255,255,0.6) !important;
+	padding:20px !important;
+}
+
+
+
+.tp-mask-wrap{
+	text-shadow:2px 2px 4px #555 !important;
+}
+
+
+
+.price_label .from, .price_label .to{
+	font-family:'rupee' !important;
+}
+
+.tours-tabs .tabs-accordion .panel-heading a {
+    background: #f19554;
+}
+
+.woocommerce-info a:link,.woocommerce-info a:active,.woocommerce-info a:visited,.woocommerce-info a:hover{
+	color:#f19554;
+	border-color:#f19554;
+}
+.lost_password a:link,.lost_password a:active,.lost_password a:visited,.lost_password a:hover{
+	color:#f19554;
+	border-color:#f19554;
+}
+
+
+
+.woocommerce .woocommerce-info-icon, .woocommerce-cart .woocommerce-info-icon, .woocommerce-page .woocommerce-info-icon {
+    color: #f19554;
+    margin-right: 5px;
+}
+
+.slicknav_menu .slicknav_nav::after {
+    background: #fff none repeat scroll 0 0 !important;
+}
+
+.atgrid__item__angle-wrap {
+    
+    z-index: 0;
+}
+.slicknav_menu a {
+    border-bottom: medium none;
+    color: #f6b02a !important;
+    opacity: 0.8;
+}
+
+.atlist__item__price a {
+    display: block;
+    color: #F19554;
+    border-bottom: none;
+    font-family: Oxygen;
+    font-weight: 700;
+    font-style: normal;
+}
+
+.woocommerce form.login .button, .woocommerce form.register .button {
+    background: #f7965b none repeat scroll 0 0 !important;
+    margin-right: 20px;
+}
+
+.woocommerce .woocommerce-MyAccount-navigation > ul > li.is-active > a {
+	color:#F7965B !important;
+}
+.woocommerce .woocommerce-MyAccount-navigation > ul > li > a:hover {
+    border-bottom: medium none;
+    color:#F7965B !important;
+}
+.woocommerce-MyAccount-content p a:link,.woocommerce-MyAccount-content p a:active,.woocommerce-MyAccount-content  p a:visited,.woocommerce-MyAccount-content  p a:hover{
+	color:#F7965B !important;
+}
+
+.woocommerce-Address-title a:link,.woocommerce-Address-title a:active,.woocommerce-Address-title a:visited,.woocommerce-Address-title a:hover{
+	color:#F7965B !important;
+}
+
+ .woocommerce-Message--info a{
+ 	color:#fff !important;
+ }
+
+
+ .aboutlist li{
+ 	list-style-type:square;
+ 	padding:2px 0 0 8px;
+ 	color:#F5965B;
+ }
+
+
+.cpolicylink:link,.cpolicylink:visited,.cpolicylink:active
+{
+	display:none;
+	color:#bbb;
+	border:none !important;
+}
+
+.cpolicylink:hover
+{
+	color:#F5965B !important;
+	border:none !important;
+}
+
+
+.detail_list li{
+ 	list-style-type:square;
+ 	padding:2px 0 0 8px;
+ 	color:#F5965B;
+ } 
+
+ .aboutcontent p{
+ 	line-height:140%;
+ 	margin-bottom:20px;
+ }
+
+
+.aboutlistcontent {
+    background: url("img/aboutcontentbg.jpg") no-repeat fixed center top / cover ;
+    height: 320px;
+    padding: 20px 0;
+}
+
+.mauto{ margin:0 auto !important; }
+
+.aboutpara1, .aboutpara2, .aboutpara3, .aboutpara4{
+	line-height:140% !important;
+	margin-bottom:30px;
+}
+
+.aboutpara1 .wpb_wrapper p:first-child{
+	/* margin-bottom:0px !important; */
+}
+
+.aboutfirstrow {
+    padding: 20px 0 20px !important;
+}
+.aboutsecondrow {
+    padding: 18px 0 18px !important;
+}
+
+.atlist__item {
+    display: table;
+    table-layout: fixed;
+    width: 100%;
+    min-height: 150px;
+    background: #fff;
+    box-shadow: 0 2px 3px rgba(0,0,0,0.09);
+    border-radius: 3px;
+    padding-bottom: 40px;
+}
+
+.main-nav .sub-menu {
+    background: #fff none repeat scroll 0 0 !important;
+    box-shadow: 2px 5px 3px 2px rgba(192,192,192,0.5);
+    z-index: 2147483647 !important;
+}
+
+.main-nav .sub-menu a:link,.main-nav .sub-menu a:active,.main-nav .sub-menu a:visited{
+	color:#e78d57 !important;
+	text-shadow:none;
+}
+.main-nav .sub-menu a:hover {
+	color:#222 !important;
+	text-shadow:none;
+}
+
+.main-nav .sub-menu .current-menu-item::after {
+    background: #F7965B !important;
+}
+
+/*
+.atlist__item__content__item::before {
+    z-index: 0 !important;
+}
+
+.atlist__item__content::before{
+	z-index:0 !important;
+}
+*/
+
+.header.innerheader {    
+    z-index: 9;
+}
+
+#wp-admin-bar-update_notifier{
+	display:none;
+}
+
+.inner-page-content-area {
+    margin-top: 200px; 
+}
+
+.inner-page-content-area-about{
+		margin-top: 194px; 
+}
+
+.inner-page-content-area-blog{
+		margin-top: 303px; 
+}
+
+.blog .inner-page-content-area, .single-post .inner-page-content-area, .archive  .inner-page-content-area{
+		margin-top: 175px; 
+}
+
+.post-type-archive-product .inner-page-content-area {
+    margin-top: 197px;
+}
+
+.form-block--light-style.form-block--with-border {
+    border: 6px solid rgba(255, 255, 255, 0.2);
+    z-index: 0;
+}
+
+.package_list_block{
+	width:33%;
+	float:left;
+}
+
+.package_list_block li{ color:#fff !important; list-style-type:square !important; }
+
+.packagelistcontentbg{
+	background: #F19554;
+	color:#fff;
+	float:left;
+	margin:20px 0 40px 0;
+}
+
+.tours-tabs .nav-tabs li a {
+    padding: 0 22px;
+}
+
+.footersocial li i:hover{
+	color:#fff !important;
+}
+
+.tours-tabs__table {
+     border-top: none; 
+     border-bottom: none; 
+ 
+}
+
+.exploretext h1{
+text-shadow:2px 2px 4px #555 !important;
+line-height:130%;
+}
+
+#swipebox-title {
+   
+    font-size: 0px;
+   
+}
+
+
+.tours-tabs__table {
+    margin: 0px 0;
+}
+
+.detail_list{
+	padding:0 20px;
+}
+
+.woocommerce table.shop_attributes {
+
+    display: none;
+}
+
+
+
+
+
+.main-nav > li{
+	padding-bottom:15px !important;
+}
+
+.main-nav > li a{
+	padding-bottom:15px;
+}
+
+
+.page-id-1460 .inner-page-content-area{ margin-bottom:0 !important; }
+.founderBottomRow{
+	padding:15px 0 !important;
+	margin:15px 0 0 0 !important;
+}
+
+
+.atlist__item__description b{
+	color:#333;
+}
+
+.atgrid--widget .atgrid__item__top__title{
+	width:85%;
+	text-align:center; 
+}
+
+.tour-single-rise main{
+	margin-top:-39px;
+}
+
+
+.single-product .inner-page-content-area {
+    margin-top: 0px !important;
+}
+
+
+.slidertitle {
+    bottom: 0;
+    font-size: 22px !important;
+    height: 100px;
+    left: 0;
+    margin: auto;
+    position: absolute;
+    right: 0;
+    text-align: center;
+    top: 15%;
+    width: 100%;
+    z-index: 1;
+}
+
+
+
+.tours-tabs__table tr td:first-child{
+	width:30% !important;
+}
+
+.tours-tabs__table tr td:last-child{
+	width:70% !important;
+}
+
+
+
+.sendEmailBlock{
+	margin:0px 0 40px 0;	
+	display:none;
+}
+
+
+.sendEmailBtn:link,.sendEmailBtn:active,.sendEmailBtn:visited,.sendEmailBtn:hover {
+    background: #f19554 none repeat scroll 0 0;
+    border: none;
+    border-radius: 5px;
+    color: #ffffff !important;
+    display: inline;
+    height: 22px;
+    margin: 10px 0;
+    padding: 10px 20px;
+    text-decoration: none;
+}
+
+.packageEmailForm {
+    clear: both;
+    width: 100%;
+}
+
+.packageEmailForm .rows
+{
+	width:50%;
+	float:left;
+}
+.popmake-close {
+    cursor: pointer;
+    position: absolute;
+    right: 10px;
+    top: -20px;
+}
+
+.hellomsg{
+	font-weight:bold;
+	font-weight:18px;
+	padding:20px 0;
+}
+
+
+.packageEmailForm select{
+	background: #fff none repeat scroll 0 0;
+    border: 1px solid #e3e3e3;
+    border-radius: 3px;
+    -moz-appearance: none;
+    display: block;
+    height: 45px;
+    line-height: 21px;
+    margin-bottom: 10px;
+    padding: 12px 15px;
+    width: 100%;
+}
+
+
+
+.packageEmailForm input[type="submit"] {
+    background: #f19554 none repeat scroll 0 0;
+    border: medium none;
+    border-radius: 2px;
+    color: #ffffff !important;
+    display: inline;
+    margin: 36px 0 10px;
+    padding: 12px 30px;
+    text-decoration: none;
+    width: 100%;
+}
+
+
+
+.popmake-1519{
+	background: #f19554 none repeat scroll 0 0 !important;
+    border: medium none !important;
+    border-radius: 5px !important;
+    color: #ffffff !important;
+    display: inline !important;
+    height: 22px !important;
+    margin: 10px 0 !important;
+    padding: 10px 20px !important;
+    text-decoration: none !important;
+}
+
+
+.main-nav .sub-menu > li{
+	padding:5px 20px !important;
+}
+
+
+.tours-tabs{
+	margin-top: -53px;
+}
+
+.single-product .tp-bullets {
+    top: 90% !important;
+}
+
+
+.popmake-close {
+    background: rgba(0, 0, 0, 0) url("http://demowebsites.org/turisto/wp-content/uploads/2016/08/ScreenHunter_02-Aug.-08-16.21.jpg") no-repeat scroll 0 0;
+    border: medium none;
+    cursor: pointer;
+    font-size: 0;
+    height: 30px;
+    position: absolute;
+    right: 10px;
+    top: -20px;
+    width: 30px;
+}
+
+
+.page-id-1444 .inner-page-content-area, .page-id-26 .inner-page-content-area, .page-id-1460 .inner-page-content-area {
+    margin-top: 50px;
+}
+
+.page-id-1212 .inner-page-content-area {
+    margin-top: 0px;
+}
+
+.page-id-1444 .slidertitle, .page-id-26 .slidertitle,.page-id-1460 .slidertitle, .page-id-1212 .slidertitle{
+    display: none;
+}
+
+
+.aboutsidebar li{
+	text-align:left;
+}
+
+
+.page-single__content p {
+    line-height: 140%;
+}
+
+.faq__accordion__item {
+    border-bottom: 1px solid #f4f4f4;
+    padding: 25px 0 25px;
+}
+
+/*
+.tours-tabs .nav-tabs li:nth-child(5){
+	display:none;
+}*/
+
+
+.detail_list a:link,.detail_list a:active,.detail_list a:visited{
+	color:#f5965b !important;
+}
+
+.detail_list a:hover{
+	color:#f5965b !important;
+}
+
+.notetext {
+    color: #fff;
+    font-weight: bold;
+    margin: 40px 0 0px 0 !important;
+    background: #333;
+    padding: 10px 20px;
+    border-radius: 2px;
+    text-align: left;
+}
+
+.passioncommitrow, .getreadyrow{
+	display:none !important;
+}
+
+.page-single__content p {
+    font-size: 14px;
+    line-height: 140%;
+}
+
+.blog__item__content p {
+    font-size: 14px;
+    margin: 0 0 10px;
+}
+
+
+.footernav {
+    display: table;
+    margin: 50px auto 0 auto;
+    padding:0; 
+    
+}
+
+.footernav li:first-child:before {
+	content:'';
+}
+
+.footernav li:before {
+	content:'\00B7';
+	padding:0 30px 0 0;
+}
+.footernav li {
+    float: left;
+    list-style-type: none;
+    padding: 0 30px 0 0;
+}
+.footernav li a:link,.footernav li a:active,.footernav li a:visited{
+	color:#fff !important;
+	border-bottom:none;
+}
+
+
+.learnmore {
+    display: table;
+    margin: 0 auto;
+}
+
+
+
+.testimonial_title {
+    color: #333;
+    font-family: "Viga" !important;
+    font-size: 36px;
+    margin-bottom: 10px;
+    margin-top: 45%;
+}
+
+
+.home_search .form-block .title{
+	display:none !important;
+}
+
+.form-block--light-style.form-block--with-title .form-block__form {
+    padding-left: 30px !important;
+    position: relative;
+}
+
+.page-id-1212 .margin-top {
+    margin-top: 0  !important;
+}
+.page-id-1212 .margin-bottom {
+    margin-bottom: 0  !important;
+}
+
+
+
+.blog .header.innerheader, .single-post .header.innerheader, .archive  .header.innerheader, .page-id-9  .header.innerheader,  .woocommerce-account .header.innerheader,  .woocommerce-checkout .header.innerheader{
+    background:rgba(0,0,0,0.8);
+}
+
+.breadcrumbs-wrap {
+    display: none !important;
+}
+
+
+
+.tours-tabs__table tr:last-child{
+	    border-bottom: 1px solid #e4e4e4 !important;
+}
+
+
+ .header-section__content{display:none;}
+
+
+
+.exploretext h1 a:link,.exploretext h1 a:active,.exploretext h1 a:visited,.exploretext h1 a:hover{
+	color:#fff !important;
+	border:none !important;	
+	float: left;
+    width: 100% !important;
+}
+
+.travRul {
+    margin-left: 0;
+    margin-top: 20px;
+}
+
+.list-block--tour-tabs {
+    margin-bottom: 20px;
+    margin-left: 20px;
+    margin-top: -28px;
+}
+
+
+
+.page-id-9 .inner-page-content-area {
+    margin-top: 60px;
+}
+
+.woocommerce-checkout .inner-page-content-area {
+    margin-top: 150px;
+}
+
+.product-name a:link,.product-name a:active,.product-name a:visited{
+	color:#F7965B !important;
+	border-color:#F7965B !important;
+}
+.product-name a:hover{
+	color:#F7965B !important;
+	border-color:#F7965B !important;
+}
+
+.booksfortravel .row{
+	padding-bottom:30px;
+}
+.booksfortravel h3{
+	margin-top:0px;
+	color:#F7965B !important;
+}
+
+
+.single-product.woocommerce-page .header-section__content{
+	display:block !important;
+}
+
+.tours-tabs__content{padding-bottom:0px;}
+
+
+.testipos {
+    padding: 86px 5% 0px 5%;
+    position: absolute;
+    width:100%;
+    white-space:nowrap;    
+}
+
+.testipos .box-content, .testipos .box-title{
+	color:#fff !important;
+}
+
+
+
+
+.testipos h1 {
+    color: #fff;
+    font-family: "Viga";
+    font-size: 36px;
+    margin-bottom: 25px;
+}
+
+
+
+.homelatestpost {
+	padding-top:80px;
+}
+
+.homelatestpost h2{
+	color: #333 !important;
+    font-family: "Viga";
+    font-size: 36px;
+    margin-bottom: 10px; 
+    padding-left:0;
+}
+.homelatestpost .flexslider{
+	box-shadow:none !important;
+}
+
+
+
+
+.cycle-carousel-wrap{ vertical-align:top !important; }
+
+
+.homelatestpost .flexslider .slides img {
+    display: block;
+    float: left;
+    margin-top: 20px;
+    margin-right: 20px;
+    margin-bottom: 20px;
+    width: 30%;
+}
+
+.home .wpb_posts_slider .flex-caption,.home  .wpb_posts_slider .nivo-caption {
+    background-color: transparent !important;
+    }
+
+
+.home .flexslider {
+    background: transparent !important;
+    border: none !important;
+    margin-top:30px !important;
+}
+
+.home .flexslider .post-title{
+	font-size:18px !important;
+	font-weight:bold !important;
+	margin-top:0 !important;
+	line-height:120% !important;
+}
+
+.home .flexslider .post-title a:link,.home .flexslider .post-title a:visited,.home .flexslider .post-title a:active,.home .flexslider .post-title a:hover{
+		color:#333 !important;
+	}
+
+.home .flexslider .slides li{ margin-top:0 !important; }	
+.home .flexslider .flex-caption{ margin-top:0 !important; }	
+
+
+
+.post-type-archive-product #tours_adventure_tours-5{
+	display:none;
+}
+
+
+.aboutsimpletext p{
+	margin-bottom:20px;
+}
+
+#tours_adventure_tours-4{
+	display:none;
+}
+.single-product.woocommerce-page .form-block--tour-booking{ 
+	/* display:none; */
+}
+
+
+.single-product.woocommerce-page .innerheader{
+	background:transparent !important;
+}
+
+.blog__item__info{
+	    padding-top: 14px !important;
+}
+
+.article-info li:last-child{
+	display:none;
+}
+
+.widget_recent_entries li{
+	text-transform:capitalize;
+}
+
+.woocommerce-MyAccount-navigation-link--downloads{
+	display:none !important;
+}
+
+
+.woocommerce-MyAccount-content .woocommerce-Message .woocommerce-Button{
+	display:none;
+}
+
+.woocommerce-order-received .inner-page-content-area {
+    margin-top: 140px;
+}
+
+
+.threeblockrow h2 {
+    color: #333;
+    font-size: 24px;
+    font-family: 'Viga' !important;
+    margin-bottom: 10px;
+}
+
+.blog__item__thumbnail img{ max-width:80% !important; }
+
+
+.header__info a, .header__info .header__info__item {
+    color: #fff !important;
+    font-weight: bold;
+    opacity: 1;
+    text-shadow: none;
+}
+
+
+
+.home .header__info a,.home  .header__info .header__info__item {
+    color: #333 !important;
+    font-weight: bold;
+    opacity: 1;
+    text-shadow: none;
+}
+
+
+
+.wpcf7-form-control-wrap select {
+    border-image-source: initial;
+    border-image-slice: initial;
+    border-image-width: initial;
+    border-image-outset: initial;
+    border-image-repeat: initial;
+    background: rgb(255, 255, 255);
+    border-width: 1px;
+    border-style: solid;
+    border-color: rgb(227, 227, 227);
+    border-radius: 3px;
+
+
+    display: block;
+    width: 100%;
+    height: 45px;
+    line-height: 21px;
+    margin-bottom: 10px;
+    padding: 12px 15px;
+    -webkit-appearance: none;
+}
+
+.cycle-slideshow .cycle-carousel-wrap .cycle-slide .testimonial-box .box-designation {
+    color: #fff !important; 
+}
+
+
+
+
+.form-block__item > .price_slider_amount > .price_slider_amount #min_price{
+	border-right:10px solid #f4f4f4;
+}
+
+
+#place_online_order{
+	float:right;
+}
+
+.woocommerce input.button.alt{
+	background:#f19554 !important;
+}
+
+
+
+.atbtn--rounded.atbtn--small {
+    line-height: 2.692em;
+    padding: 0 1.538em;
+    width: 130px;
+}
