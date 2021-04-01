@@ -1,5 +1,32 @@
-b
-
+body {
+  background-color: rgba(56, 66, 75, 0.808);
+  text-align: center;
+}
 h1 {
-
+  color:aqua;
+  font-family: Georgia;
+  text-decoration: underline;
+  text-decoration: blue;
+}
+h2 {
+  color:antiquewhite;
+  font-family: Times;
+  font-style: italic;
+}
+h3 {
+  color:antiquewhite;
+  font-family: Times;
+  font-style: oblique;
+}
+p {
+  color:antiquewhite;
+  font-family: Times;
+  font-style: normal;
+}
+img {
+  height: auto;
+}
+a {
+  color: rgb(255, 255, 255);
+  font-weight: bold;
 }
