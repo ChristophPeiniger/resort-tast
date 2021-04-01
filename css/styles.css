@@ -1,0 +1,41 @@
+body {
+  background-color: rgba(0, 0, 0, 0.808);
+  }
+  h1 {
+  color:rgb(0, 38, 255);
+  font-family: Georgia;
+  text-decoration: underline;
+  text-decoration: blue;
+  font-size: 60px;
+  text-align: center;
+  }
+  h2 {
+  color:antiquewhite;
+  font-family: Times;
+  font-style: italic;
+  font-weight: 900;
+  }
+  h3 {
+  color:antiquewhite;
+  font-family: Times;
+  font-style: oblique;
+  }
+  p {
+  color:antiquewhite;
+  font-family: Times;
+  font-style: normal;
+  }
+  img {
+  height: auto;
+  }
+  a {
+  color: rgb(255, 255, 255);
+  font-weight: bold;
+  }
+  ul {
+    color: antiquewhite;
+  }
+  li {
+    color: antiquewhite;
+  }
+  
