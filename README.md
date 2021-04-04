@@ -1,4 +1,4 @@
-# {Branching trining page}
+# {Branching training page}
 #### {A HTML project I used to practice the concept of branching in git, {Date 31.03.21}
 #### By **{Chrsitoph Peiniger}**
 ## Description
